@@ -1,11 +1,14 @@
-export function crearGolondrina(){
-    return {
-        energia: 30,
-        volar: function(km){
-            this.energia -= km * 3
-        },
-        comer: function(gramos){
-            this.energia += gramos * 2
-        }
+export class Golondrina {
+    constructor(energia = 30){
+        this.energia = energia
     }
+
+    volar(km){
+        this.energia -= km * 3
+    }
+
+    comer(gramos){
+        this.energia += gramos * 2
+    }
+
 }
